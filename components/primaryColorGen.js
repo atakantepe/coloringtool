@@ -27,6 +27,10 @@ function PrimaryColorGen() {
       setColor("#" + e.value);
     }
   };
+
+  useEffect(() => {
+    setColor(color);
+  }, [color]);
   
 
   const handlePercentageChange = (e) => {
